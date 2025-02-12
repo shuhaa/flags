@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui;
+  background-color: #dee8fc;
+}
+
+.header__container {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+header h1 {
+  text-align: center;
+  color: #5f90f1;
+  font-size: 5rem;
+  font-weight: 600;
+  width: 70%;
+  text-align: right;
+  margin-left: 140px;
+}
+
+.header__img {
+  width: 10rem;
+  height: 10rem;
+  margin-left: 155px;
+  position: fixed;
+}
+.header__img:hover {
+  background-color: #5f90f1;
+  border-radius: 10%;
+}
+.container {
+  display: grid;
+}
+
+.countries {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(auto, 1fr);
+  gap: 20px;
+
+  width: 80%;
+  font-size: 2rem;
+  opacity: 1;
+  margin-left: 150px;
+  margin-bottom: 5rem;
+}
+.country {
+  width: 30rem;
+  height: 30rem;
+  display: grid;
+}
+
+.country__img {
+  width: 30rem;
+  height: 17rem;
+  object-fit: cover;
+  border-top-left-radius: 0.7rem;
+  border-top-right-radius: 0.7rem;
+  align-self: end;
+}
+
+.country__data {
+  width: 30rem;
+  padding-top: 1rem;
+  padding-left: 0.3rem;
+  opacity: 0;
+}
+
+.country__name {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: white;
+}
+
+.country__region {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  color: white;
+}
+
+.countries__list {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(auto, 1fr);
+  gap: 3rem;
+  margin-right: 3rem;
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+  display: none;
+}
+
+.countries__list a {
+  font-size: 2.5rem;
+  color: #5f90f1;
+  text-decoration: none;
+  text-align: end;
+}
+.countries__list a:hover {
+  color: #0f42a8;
+}
+.active {
+  display: none;
+}
+
+.unactive {
+  display: grid;
+}
+.randoms {
+  width: 70%;
+  margin-left: 55rem;
+  margin-bottom: 20rem;
+}
+.random {
+  margin-top: 7rem;
+  width: 30rem;
+  height: 30rem;
+}
+.random__name {
+  font-size: 3.5rem;
+}
+
+.random__region {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.random__img {
+  width: 100%;
+  height: 22rem;
+}
+.random__data {
+  width: 30rem;
+  text-align: end;
+}
+.random__row {
+  font-size: 1.5rem;
+}
+
+footer p {
+  color: #5f90f1;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
