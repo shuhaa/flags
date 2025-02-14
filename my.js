@@ -20,17 +20,17 @@ for (let texts of jsonText) {
 
 let country = document.querySelectorAll(".country ");
 
-for (let i of country) {
-  i.addEventListener("mouseover", function (e) {
+for (let countr of country) {
+  countr.addEventListener("mouseover", function (e) {
     e.preventDefault();
-    i.children[0].style.opacity = 1;
-    i.style.backgroundColor = "#5f90f1";
-    i.style.borderRadius = "5%";
+    countr.children[0].style.opacity = 1;
+    countr.style.backgroundColor = "#5f90f1";
+    countr.style.borderRadius = "5%";
   });
-  i.addEventListener("mouseout", function (e) {
+  countr.addEventListener("mouseout", function (e) {
     e.preventDefault();
-    i.children[0].style.opacity = 0;
-    i.style.backgroundColor = "#dee8fc";
+    countr.children[0].style.opacity = 0;
+    countr.style.backgroundColor = "#dee8fc";
   });
 }
 
@@ -71,11 +71,11 @@ let nameCount = document.querySelectorAll(".name");
 let h1 = document.querySelector("h1");
 let randoms = document.querySelector(".randoms");
 
-for (let i of nameCount) {
-  i.addEventListener("click", function (e) {
+for (let names of nameCount) {
+  names.addEventListener("click", function (e) {
     e.preventDefault();
     for (let m of nameArr) {
-      if (i.textContent.trim() === m.nam.trim()) {
+      if (names.textContent.trim() === m.nam.trim()) {
         countriesList.innerHTML = "";
         h1.innerHTML = "";
         const news = `
